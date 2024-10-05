@@ -15,13 +15,12 @@ return {
 
   {
     "williamboman/mason.nvim",
-    opts = {
-      ensure_installed = {
-        "typescript-language-server",
-        "tailwindcss-language-server",
-        "prettierd",
-      },
-    },
+  },
+
+  {
+    "pmizio/typescript-tools.nvim",
+    dependencies = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
+    opts = {},
   },
 
   {
@@ -40,7 +39,7 @@ return {
         "javascript",
         "typescript",
         "tsx",
-        "css"
+        "css",
       },
     },
   },
